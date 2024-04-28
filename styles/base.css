@@ -1,3 +1,10 @@
+/* Google Font API reference */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Preconnect links */
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com");
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
