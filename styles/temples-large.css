@@ -1,0 +1,16 @@
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.sidebar a:hover {
+  background-color: rgb(104, 133, 159);
+}
+footer {
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  margin-top: 15px;
+}
