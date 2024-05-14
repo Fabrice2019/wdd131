@@ -77,48 +77,48 @@ header {
   margin-top: 10px; /* Adds space above the icon */
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1024px) {
   .weather-section {
-    flex-direction: row; /* Switch to horizontal layout on larger screens */
-    justify-content: space-between;
-    align-items: stretch;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    padding: 0; /* No padding */
   }
 
   .hero-background img {
-    width: 50%; /* Adjust the width of the image on larger screens */
-    height: calc(
-      100vh - 60px
-    ); /* Adjust height to fill the viewport minus header/footer */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section */
+    z-index: -1; /* Send to back */
+    display: block; /* Ensure it's displayed */
   }
 
   .content-container {
-    width: 50%; /* Content takes up the remaining space */
-    flex-direction: row; /* Align content sections side by side */
+    position: relative; /* Positioned relative to the section */
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Adjust to necessary width */
+    z-index: 2; /* Above the background image */
+    background: none; /* No background for container */
   }
 
   .weather-box,
   .data-section {
-    width: 50%; /* Each box takes half of the content container */
+    width: 50%; /* Each takes half of the container width */
+    background: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Slightly transparent for visibility */
   }
 }
-
-footer {
-  background-color: var(--secondary-color);
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  /* Add top margin to create space */
-  margin-top: 20px;
-}
-
-/* Additional styles for icons and other elements */
-.weather-icon {
-  height: 24px; /* Adjust size as needed */
-  vertical-align: middle;
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .weather-section {
     position: relative;
     flex-direction: row;
