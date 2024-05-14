@@ -158,19 +158,21 @@ header {
       0.9
     ); /* Slightly transparent for visibility */
   }
-}
+  footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 20px;
+  }
 
-footer {
-  background-color: var(--secondary-color);
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  width: 100%;
-  margin-top: 20px;
-}
-
-/* Additional styles for icons and other elements */
-.weather-icon {
-  height: 24px; /* Adjust size as needed */
-  vertical-align: middle;
+  /* Additional styles for icons and other elements */
+  .weather-icon {
+    height: 24px; /* Adjust size as needed */
+    vertical-align: middle;
+  }
+  .weather-box h2 {
+    flex-direction: row; /* Stacks items horizontally on big screens */
+  }
 }
