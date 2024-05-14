@@ -175,4 +175,10 @@ header {
   .weather-box h2 {
     flex-direction: row; /* Stacks items horizontally on big screens */
   }
+  .weather-heading::after {
+    display: inline-block;
+    margin-left: 10px; /* Space between the text and the icon */
+    font-size: 24px; /* Icon size */
+    vertical-align: middle; /* Aligns icon with the middle of the text */
+  }
 }
