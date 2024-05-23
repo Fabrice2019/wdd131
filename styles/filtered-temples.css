@@ -132,7 +132,6 @@ li.menu-button {
   width: 100%;
   height: auto;
   border-radius: 4px;
-  loading: lazy;
 }
 
 .temple-card h3 {

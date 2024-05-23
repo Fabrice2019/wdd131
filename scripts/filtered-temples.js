@@ -82,6 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   ];
 
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent = document.lastModified;
+
   function displayTemples(filteredTemples) {
     const templeContainer = document.getElementById("temple-container");
     templeContainer.innerHTML = "";
