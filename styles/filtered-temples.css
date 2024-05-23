@@ -1,0 +1,186 @@
+/* General styling for body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styling for header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header nav ul.nav-right {
+  margin-left: auto;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.menu-button svg,
+.sidebar svg {
+  fill: #fff;
+}
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  background-color: #444;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+}
+
+.sidebar a {
+  color: #fff;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  background-color: #555;
+}
+
+.sidebar .close-btn {
+  text-align: right;
+  padding: 10px;
+}
+
+h1 {
+  padding-top: 55px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.menu-button {
+  display: none;
+}
+
+li.menu-button {
+  padding-left: 180px;
+}
+
+.off-screen-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Space between nav bar and content */
+.content-container {
+  padding-top: 70px;
+}
+
+/* Temple card styling */
+.temple-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  loading: lazy;
+}
+
+.temple-card h3 {
+  margin-top: 8px;
+  font-size: 1.5em;
+}
+
+.temple-card .temple-info {
+  margin-top: 8px;
+}
+
+.temple-card .temple-info p {
+  margin: 4px 8px;
+  text-align: start;
+}
+
+/* Gallery grid layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .menu-button {
+    display: block;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .sidebar {
+    display: none; /* Hide sidebar by default on mobile */
+  }
+
+  .off-screen-menu {
+    display: none; /* Hide overlay by default on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
