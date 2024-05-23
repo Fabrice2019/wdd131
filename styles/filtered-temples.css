@@ -87,8 +87,8 @@ header nav ul li a:hover {
 }
 
 h1 {
-  padding-top: 55px;
-  text-align: center;
+  display: flex;
+  margin: 0;
 }
 
 h2 {
