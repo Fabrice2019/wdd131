@@ -156,6 +156,12 @@ li.menu-button {
   padding: 16px;
 }
 
+footer {
+  text-align: center;
+  background-color: #444;
+  color: aliceblue;
+}
+
 @media (max-width: 768px) {
   .menu-button {
     display: block;
