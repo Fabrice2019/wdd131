@@ -67,7 +67,7 @@ input[type="checkbox"] {
   text-align: center;
 }
 
-.rating .stars {
+.rating label {
   color: #ccc;
   font-size: 1.5rem;
 }
