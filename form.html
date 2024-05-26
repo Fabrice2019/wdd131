@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review</title>
+    <meta name="description" content="Review for the products" />
+    <meta name="author" content="Fabrice Ndabitezamaso" />
+    <link rel="stylesheet" href="styles/form.css" />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="form-container">
+        <h1>Product Review</h1>
+        <form id="reviewForm">
+          <label for="productName">Product Name</label>
+          <select id="productName" name="productName" required>
+            <option value="">Choose a Product ...</option>
+          </select>
+
+          <label for="rating">Overall Rating</label>
+          <div id="rating" class="rating">
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1">
+              <div class="stars">
+                <span class="star">&#9733;</span>
+              </div>
+              <span class="circle"></span>
+            </label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2">
+              <div class="stars">
+                <span class="star">&#9733;</span
+                ><span class="star">&#9733;</span>
+              </div>
+              <span class="circle"></span>
+            </label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3">
+              <div class="stars">
+                <span class="star">&#9733;</span
+                ><span class="star">&#9733;</span
+                ><span class="star">&#9733;</span>
+              </div>
+              <span class="circle"></span>
+            </label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4">
+              <div class="stars">
+                <span class="star">&#9733;</span
+                ><span class="star">&#9733;</span
+                ><span class="star">&#9733;</span
+                ><span class="star">&#9733;</span>
+              </div>
+              <span class="circle"></span>
+            </label>
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5">
+              <div class="stars">
+                <span class="star">&#9733;</span
+                ><span class="star">&#9733;</span
+                ><span class="star">&#9733;</span
+                ><span class="star">&#9733;</span
+                ><span class="star">&#9733;</span>
+              </div>
+              <span class="circle"></span>
+            </label>
+          </div>
+
+          <label for="installationDate">Date of Installation</label>
+          <input
+            type="date"
+            id="installationDate"
+            name="installationDate"
+            required
+          />
+
+          <p>
+            Which features did you find useful in the product? (Check all that
+            apply)
+          </p>
+          <label
+            ><input type="checkbox" name="features" value="Durability" />
+            Durability</label
+          >
+          <label
+            ><input type="checkbox" name="features" value="Ease of Use" /> Ease
+            of Use</label
+          >
+          <label
+            ><input type="checkbox" name="features" value="Performance" />
+            Performance</label
+          >
+          <label
+            ><input type="checkbox" name="features" value="Design" />
+            Design</label
+          >
+
+          <label for="review">Written Review (Optional)</label>
+          <textarea id="review" name="review"></textarea>
+
+          <label for="name">Your Name (Optional)</label>
+          <input type="text" id="name" name="name" />
+
+          <button type="submit">Post Review</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>
+        &copy;<span id="currentYear"></span> 🌴 Fabrice Ndabitezamaso 🌴 Aurich,
+        Germany.
+      </p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+  </body>
+</html>

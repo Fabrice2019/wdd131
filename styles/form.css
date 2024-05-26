@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: #f2f2f2;
+  margin-top: 60px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.rating label {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+
+.rating label .stars {
+  color: #ccc;
+  font-size: 1.5rem;
+}
+
+.rating label .circle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 5px auto 0;
+}
+
+.rating input[type="radio"]:checked ~ label .stars .star {
+  color: #ccc;
+}
+
+.rating input[type="radio"]:checked + label .circle,
+.rating input[type="radio"]:checked + label .stars .star {
+  color: #f39c12;
+}
+
+.rating input[type="radio"]:checked ~ label .stars .star,
+.rating input[type="radio"]:checked ~ label .circle {
+  color: #f39c12;
+}
+
+.rating input[type="radio"]:checked ~ label ~ label .stars .star,
+.rating input[type="radio"]:checked ~ label ~ label .circle {
+  color: #ccc;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f2f2f2;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+footer p {
+  margin: 5px 0;
+}
