@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Madagascar</title>
     <meta name="description" content=" country and its weather data" />
     <meta name="author" content="Fabrice Ndabitezamaso" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <!-- Link to the Google Fonts CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/place.css" />
   </head>
   <body>
@@ -16,49 +19,49 @@
       <h1>Madagascar</h1>
     </header>
     <main>
-    <section class="weather-section">
-      <picture class="hero-background">
-        <source media="(min-width: 1024px)" srcset="images/hero-large.webp" />
-        <source media="(min-width: 465px)" srcset="images/hero-small.webp" />
-        <img src="images/hero-small.webp" alt="Madagascar scenery" />
-      </picture>
-      <div class="content-container">
-        <div class="weather-box">
-          <h2 class="weather-heading">
-            Weather
-            <img
-              src="images/weather-icon.svg"
-              alt="Partly Cloudy"
-              class="weather-icon"
-            />
-          </h2>
-          <ul>
-            <li>Temperature: 10°C</li>
-            <li>Conditions: Partly Cloudy</li>
-            <li>Wind: 5 km/h</li>
-            <li>Wind Chill: <span id="windChill">Calculating...</span></li>
-          </ul>
+      <section class="weather-section">
+        <picture class="hero-background">
+          <source media="(min-width: 1024px)" srcset="images/hero-large.webp" />
+          <source media="(min-width: 465px)" srcset="images/hero-small.webp" />
+          <img src="images/hero-small.webp" alt="Madagascar scenery" />
+        </picture>
+        <div class="content-container">
+          <div class="weather-box">
+            <h2 class="weather-heading">
+              Weather
+              <img
+                src="images/weather-icon.svg"
+                alt="Partly Cloudy"
+                class="weather-icon"
+              />
+            </h2>
+            <ul>
+              <li>Temperature: 10°C</li>
+              <li>Conditions: Partly Cloudy</li>
+              <li>Wind: 5 km/h</li>
+              <li>Wind Chill: <span id="windChill">Calculating...</span></li>
+            </ul>
+          </div>
+          <div class="data-section">
+            <h2>Data</h2>
+            <ul>
+              <li>Area: 587,041 sq km</li>
+              <li>Population: 27,691,018</li>
+              <li>Capital: Antananarivo</li>
+              <li>Languages: Malagasy, French</li>
+              <li>Currency: Malagasy Ariary</li>
+              <li>Time Zone: UTC+3</li>
+              <li>Calling Code: +261</li>
+              <li>Internet TLD: .mg</li>
+            </ul>
+          </div>
         </div>
-        <div class="data-section">
-          <h2>Data</h2>
-          <ul>
-            <li>Area: 587,041 sq km</li>
-            <li>Population: 27,691,018</li>
-            <li>Capital: Antananarivo</li>
-            <li>Languages: Malagasy, French</li>
-            <li>Currency: Malagasy Ariary</li>
-            <li>Time Zone: UTC+3</li>
-            <li>Calling Code: +261</li>
-            <li>Internet TLD: .mg</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-</main>
+      </section>
+    </main>
     <footer>
       <p>©<span id="currentYear"></span> Fabrice Ndabitezamaso Madagascar</p>
       <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
-    <script defer src="scripts/place.js"></script>
+    <script src="scripts/place.js" defer></script>
   </body>
 </html>
