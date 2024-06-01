@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fafa Web-development</title>
+  <meta name="description" content="Make beautiful websites with Fafa Web-development" />
+  <meta name="author" content="Fabrice Ndabitezamaso" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="#home"><img src="logo.png" alt="the logo" /></a>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <span class="hamburger">&#9776;</span>
+        <span class="close">&times;</span>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="image1.jpg" alt="Code on a Laptop Screen" class="slide active" loading="lazy" />
+      <img src="image2.jpg" alt="Developer Working" class="slide" loading="lazy" />
+      <img src="image3.jpg" alt="Team Collaboration" class="slide" loading="lazy" />
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    <div class="slider-overlay">
+      <button class="learn-more" onclick="scrollToSection('about')">Learn More</button>
+    </div>
+  </div>
+
+  <section id="home" class="hero">
+    <h1>Welcome to Fafa Web-development</h1>
+    <p>Your one-stop solution for web development</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of passionate developers committed to creating beautiful and functional websites.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+      <div class="service">
+        <h3>Web Design</h3>
+        <p>Creating visually appealing and user-friendly designs.</p>
+      </div>
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>Developing robust and scalable web applications.</p>
+      </div>
+      <div class="service">
+        <h3>SEO</h3>
+        <p>Optimizing your website to rank higher on search engines.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Fafa Web-development. All rights reserved.</p>
+  </footer>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
